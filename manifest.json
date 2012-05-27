@@ -1,0 +1,14 @@
+{
+	"name": "Google Account Switcher",
+	"version": "1.0",
+	"description": "Google Account Switcher",
+	"content_scripts" : [
+		{
+			"matches" : ["https://*.google.com/*"],
+			"js" : ["jquery-1.7.1.min.js", "content_scripts.js"]
+		}
+	],
+	"permissions" : [
+        "https://*.google.com/*"
+	]
+}
